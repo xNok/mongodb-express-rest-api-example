@@ -1,0 +1,4 @@
+vscode:
+  extensions:
+    - mongodb.mongodb-vscode
+    - ms-azuretools.vscode-docker
