@@ -1,7 +1,7 @@
 .PHONY:mongo testdata server app
 
 mongo:
-	docker run -d --name mongo -p 2717:27017 -v ~/mongodb:/data/db mvertes/alpine-mongo
+	docker run -d --name mongo -p 27017:27017 -v ${PWD}/data/db:/data/db --rm mongo
 
 testdata:
 	./testdata.sh
